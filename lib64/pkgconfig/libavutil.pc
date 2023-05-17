@@ -1,0 +1,14 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.58.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm
+Cflags: -I${includedir}

@@ -1,0 +1,13 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/qt5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Sqld
+Description: Qt Sqld module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Sqld 
+Cflags: -DQT_SQL_LIB -I${includedir}/QtSql -I${includedir}
+Requires: Qt5Cored
+

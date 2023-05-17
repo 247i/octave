@@ -1,0 +1,14 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+libdir=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib
+includedir=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 22.1.16
+Requires:
+Requires.private: zlib, libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

@@ -1,0 +1,8 @@
+## Generated from src/isdicom.cpp
+%!test
+%! fpath = tmpnam ();
+%! urlwrite ("http://imagej.nih.gov/ij/images/CT%20Scan.dcm", fpath);
+%! assert (isdicom (fpath), true);
+%!test
+%! assert (isdicom (which ("gray")), false);
+%!fail ("isdicom")

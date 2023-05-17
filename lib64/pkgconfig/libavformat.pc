@@ -1,0 +1,14 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.71.100
+Requires: 
+Requires.private: libavcodec >= 57.89.100, libswresample >= 2.7.100, libavutil >= 55.58.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lws2_32 -lavicap32 -lgdi32 -lpsapi -lole32 -lstrmiids -luuid -loleaut32 -lshlwapi -luser32 -liconv -lsecur32 -lxvidcore -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lx264 -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lvpx -lm -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lvpx -lm -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lvpx -lm -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lvpx -lm -lvorbisenc -lvorbis -logg -ltheoraenc -ltheoradec -logg -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lspeex -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lgnutls -lm -llzma -lbz2 -lz -lpsapi -ladvapi32 -lshell32 -mconsole
+Cflags: -I${includedir}

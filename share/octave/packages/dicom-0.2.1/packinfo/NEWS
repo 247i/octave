@@ -1,0 +1,35 @@
+ Summary of important user-visible changes for dicom 0.2.1 (2018/04/02):
+-------------------------------------------------------------------------
+
+ ** added checks for depreciated functions, using config.h 
+
+ ** added fallback gdcm detection in cmake fails
+
+ Summary of important user-visible changes for dicom 0.2.0 (2017/02/20):
+-------------------------------------------------------------------------
+
+ ** Updated install to detect gdcm library using cmake
+
+ ** install source tests as part of package
+
+ ** dicominfo updated to support sequences of unknown length
+
+ ** moved isdicom to own .oct file
+
+ ** updated function documentation 
+
+ ** added dicomuid function 
+
+ Summary of important user-visible changes for dicom 0.1.1 (2011/11):
+-------------------------------------------------------------------------
+
+ ** The function isdicom has been completely rewritten and will perform
+    much faster for invalid dicom files.  It also no longer accepts a cell
+    array of strings since it reduces its usefulness by other functions.
+    Such use can be replaced with:
+
+      cellfun (@isdicom, cell_array_filenames)
+
+ ** The dicom package no longer autoloads by default.  Please load the
+    package manually with `pkg load dicom' or add it to the `.octaverc'
+    file to load it automatically at the start of each Octave session.

@@ -1,0 +1,12 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: lcms2
+Description: LCMS Color Management Library
+Version: 2.9
+Libs: -L${libdir} -llcms2
+Libs.private: -ljpeg -lm -lpthread
+Cflags: -I${includedir}
+Requires: libtiff-4

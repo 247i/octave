@@ -1,0 +1,2 @@
+## Generated from src/connect.cc
+%!error <Invalid call to zmq_connect> zmq_connect()

@@ -1,0 +1,10 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libproxy-1.0
+Description: Proxy Configuration Library
+Version: 0.4.15
+Libs: -L${libdir} -lproxy
+Libs.private: -lpthread -lm
+Cflags: -I${includedir} 

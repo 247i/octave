@@ -1,0 +1,11 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+libdir=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib
+includedir=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/include
+GSL_CBLAS_LIB=-lgslcblas
+
+Name: GSL
+Description: GNU Scientific Library
+Version: 2.5
+Libs: -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lgsl ${GSL_CBLAS_LIB} -lm -lm 
+Cflags: -I/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/include

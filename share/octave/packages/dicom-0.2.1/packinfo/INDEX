@@ -1,0 +1,10 @@
+dicom >> dicom: file io for medical images and other data
+imaging  medical
+  isdicom
+  _gendicomdict
+  dicomuid
+  dicomdict
+  dicomread
+  dicomlookup
+  dicominfo
+  dicomwrite

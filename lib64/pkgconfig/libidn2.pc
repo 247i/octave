@@ -1,0 +1,11 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libidn2
+Description: Library implementing IDNA2008 and TR46
+Version: 2.0.5
+Cflags: -I${includedir}
+Libs: -L${libdir} -lidn2
+Libs.private: -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -liconv -R/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -lunistring -L/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib -liconv -R/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib

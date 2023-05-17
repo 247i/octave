@@ -1,0 +1,9 @@
+## DO NOT EDIT!  Generated automatically from call-stack.cc by Make.
+%!test
+%! orig_val = max_stack_depth ();
+%! old_val = max_stack_depth (2*orig_val);
+%! assert (orig_val, old_val);
+%! assert (max_stack_depth (), 2*orig_val);
+%! max_stack_depth (orig_val);
+%! assert (max_stack_depth (), orig_val);
+%!error (max_stack_depth (1, 2))

@@ -1,0 +1,14 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavresample
+Description: Libav audio resampling library
+Version: 3.5.0
+Requires: 
+Requires.private: libavutil >= 55.58.100
+Conflicts:
+Libs: -L${libdir}  -lavresample 
+Libs.private: -lm
+Cflags: -I${includedir}

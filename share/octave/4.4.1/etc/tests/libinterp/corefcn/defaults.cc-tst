@@ -1,0 +1,7 @@
+## DO NOT EDIT!  Generated automatically from defaults.cc by Make.
+%!assert (ischar (OCTAVE_HOME ()))
+%!error OCTAVE_HOME (1)
+%!assert (ischar (OCTAVE_EXEC_HOME ()))
+%!error OCTAVE_EXEC_HOME (1)
+%!assert (ischar (OCTAVE_VERSION ()))
+%!error OCTAVE_VERSION (1)

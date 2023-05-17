@@ -1,0 +1,23 @@
+## DO NOT EDIT!  Generated automatically from error.cc by Make.
+%!test <*45753>
+%! warning ("error");
+%! assert (! isempty (help ("warning")));
+%!test <*51997>
+%! id = "Octave:divide-by-zero";
+%! current = warning ("query", id);
+%! current_all = warning ();
+%! previous = warning (current_all);
+%! assert (previous, current_all);
+%! previous = warning (current);
+%! assert (previous, current);
+%! previous = warning (current.state, id);
+%! assert (previous, current);
+%!test
+%! lasterror ("reset");
+%! x = lasterror ();
+%! assert (x.identifier, "")
+%! assert (x.message, "")
+%! assert (isempty (x.stack))
+%! lasterror (x);
+%! y = lasterror ();
+%! assert (y, x);

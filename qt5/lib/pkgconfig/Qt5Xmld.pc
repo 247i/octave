@@ -1,0 +1,13 @@
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/qt5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Xmld
+Description: Qt Xmld module
+Version: 5.11.0
+Libs: -L${libdir} -lQt5Xmld 
+Cflags: -DQT_XML_LIB -I${includedir}/QtXml -I${includedir}
+Requires: Qt5Cored
+

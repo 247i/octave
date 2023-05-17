@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+exec_prefix=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32
+libdir=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/lib
+includedir=/scratch/build/mxe-octave-w64-32-release/usr/x86_64-w64-mingw32/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: http://tukaani.org/xz/
+Version: 5.2.3
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private:  
